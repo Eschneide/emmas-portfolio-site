@@ -1,49 +1,56 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Emma Schneider - Home Page</title>
-    <meta name="description" content="a portfolio website to hold my work">
-    <meta name="author" content="Emma Schneider">
-    <link rel="icon" type="image/png" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma Schneider - Freelance Graphic Designer & Illustrator</title>
+  <meta name="description" content="Experienced in Procreate, Adobe Illustrator, InDesign, and Photoshop, delivering versatile and high-quality designs">
+  <meta name="author" content="Emma Schneider">
+  <link rel="icon" type="image/png" href="favicon.ico">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
-    <div id="pageCanvas">
-    <header>
-        <!--𝗛𝗲𝗮𝗱𝗲𝗿 𝗖𝗼𝗻𝘁𝗲𝗻𝘁 𝗛𝗲𝗿𝗲 -->
-        <nav>
-          <div class="initials">E.S.</div>
-            <a href="#"><button class="selected">Home</button></a>
-            <a href="portfolio.html"><button>Portfolio</button></a>
-            <a href="bio.html"><button>Bio</button></a>
-            <a href="index.html"><button class="contact">Contact</button></a>
-        </nav>
-    </header>
-    <main>
-        <!--𝗠𝗮𝗶𝗻 𝗖𝗼𝗻𝘁𝗲𝗻𝘁-->
-        <div style="float: left; width: 50%">
-          <div class="intro">
-            <h1>Emma Schneider</h1>
-            <h3>Freelance Graphic Designer & Illustrator</h3>
-            <p>Graphic designer with knowledge in Procreate, Adobe Illustrator, InDesign, and Photoshop to give versatile and high quality work.</p>
-          </div>
-        </div>
-        <div style="float: left; width: 50%">
-          <img src="images/HouseWatercolor.jpg" style="width: 100%" />
-        </div>
-    </main>
-    <footer>
-        Emma Schneider - All Rights Reserved.
-    </footer>
+<div class="container">
+  <nav class="navbar">
+    <a href="index.html"><div class="initials">E.S.</div></a>
+    <ul>
+      <li class="selected">Home</li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
+  <main>
+    <!--𝗠𝗮𝗶𝗻 𝗖𝗼𝗻𝘁𝗲𝗻𝘁-->
+    <div class="content-block">
+      <div class="intro">
+        <h1>Emma Schneider</h1>
+        <h3>Freelance Graphic Designer & Illustrator</h3>
+        <p>Experienced in Procreate, Adobe Illustrator, InDesign, and Photoshop, delivering versatile and high-quality designs.</p>
+      </div>
     </div>
+    <div class="content-block no-padding">
+      <img src="images/HouseWatercolor.jpg" alt="House Watercolor" style="width: 100%">
+    </div>
+  </main>
+  <footer>
+    Keep in touch! (<a href="mailto:findemmarose@gmail.com">findemmarose@gmail.com</a>)
+  </footer>
+</div>
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', function () {
+    document.querySelector('.navbar ul').classList.toggle('show');
+  });
+</script>
 </body>
 </html>
  
